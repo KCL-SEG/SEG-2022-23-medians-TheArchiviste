@@ -21,4 +21,3 @@ while True:
     else:
         break
 print(numbers)
-print(median(numbers))
