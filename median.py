@@ -1,7 +1,6 @@
 """Median calculator."""
 
 def median(numbers):
-    numbers.sort()
     if len(numbers) % 2 == 0:
         var = len(numbers) // 2
         val_1 = numbers[var]
@@ -15,7 +14,8 @@ def median(numbers):
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
-        numbers = [float(value) for value in input().split(",")].sort()
+        numbers = [float(value) for value in input().split(",")]
+        numbers.sort()
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
